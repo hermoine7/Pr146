@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+        <a-scene background="color: #000000">
+
+        <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15"> </a-camera>
+
+      <!-- antenna -->
+      <a-circle
+        position="0 9.15 0"
+        color="#eed3cb"
+        radius="0.8"
+        material="side: double"
+      >
+      </a-circle>
+      <a-cylinder
+        color="#757575"
+        height="1.5"
+        radius="0.05"
+        position="0 11 0"
+        animation="property: position; from:-0.2 10.4 -0.1;to: 0.2 10.4 -0.1;dir:alternate;loop: true; dur: 1000;"
+      ></a-cylinder>
+      <a-sphere
+        color="#010080"
+        radius="0.3"
+        position="0 11 0"
+        animation="property: position; from:-0.2 11 -0.1;to: 0.2 11 -0.1;dir:alternate;loop: true; dur: 1000;"
+      ></a-sphere>
+
+      <!-- Head -->
+      <a-box
+        id="head"
+        color="#135da0"
+        position="0 8 0"
+        width="3.2"
+        height="2.2"
+      >
+      </a-box>
+
+      <!-- Eyes -->
+      <a-sphere
+        color="#fff"
+        position="-0.63 8.3 0.2"
+        radius="0.6"
+        rotation="0 10 0"
+      >
+      </a-sphere>
+
+      <a-sphere
+        color="#000"
+        radius="0.15"
+        position="-0.63 8.1 0.9"
+        animation="property: position; from:-0.63 8.1 0.9;to: -0.63 8.3 0.9;dir:alternate;loop: true; dur: 1000;"
+      ></a-sphere>
+
+      <a-sphere
+        color="#fff"
+        position="0.63 8.3 0.2"
+        radius="0.6"
+        rotation="0 -10 0"
+      >
+      </a-sphere>
+      <a-sphere
+        color="#000"
+        radius="0.15"
+        position="0.63 8.1 0.9"
+        animation="property: position; from:0.63 8.1 0.9;to: 0.63 8.3 0.9;dir:alternate;loop: true; dur: 1000;"
+      ></a-sphere>
+
+      <!-- Neck -->
+      <a-box id="neck" color="#eed3cb" position="0 6.7 0" width="1" height="0.4">
+      </a-box>
+
+      <!-- Body -->
+      <a-box
+        id="body"
+        color="#135da0"
+        position="0 4.5 0"
+        width="4.5"
+        height="4"
+      >
+      </a-box>
+
+      <!-- Left Hand -->
+      <a-cylinder
+        position="-2.5 5.4 0"
+        rotation="30 90 0"
+        color="#eed3cb"
+        height="2"
+        width="0.2"
+        radius="0.3"
+      ></a-cylinder>
+      <a-cylinder
+        position="-3.4 5.05 0"
+        rotation="-50 90 0"
+        height="1.75"
+        width="0.3"
+        radius="0.3"
+        color="#eed3cb"
+      ></a-cylinder>
+      <a-sphere
+        position="-4.3 5.8 0"
+        color="#010080"
+        height="1.2"
+        width="0.3"
+        radius="0.4"
+      ></a-sphere>
+
+      <!-- Right Hand -->
+      <a-cylinder
+        position="2.7 5.5 0"
+        rotation="-50 90 0"
+        color="#eed3cb"
+        height="2"
+        width="0.2"
+        radius="0.3"
+      ></a-cylinder>
+      <a-cylinder
+        position="4 5.4 0"
+        rotation="50 90 0"
+        color="#eed3cb"
+        height="2"
+        width="0.3"
+        radius="0.3"
+      ></a-cylinder>
+      <a-sphere
+        position="4.7 6 0"
+        color="#010080"
+        height="1.9"
+        width="0.3"
+        radius="0.4"
+      ></a-sphere>
+
+      <!-- Left Legs -->
+      <a-cylinder color="#eed3cb" radius="0.4" height="3.5" position="-1 0.7 0">
+      </a-cylinder>
+
+      <!-- Right Leg -->
+      <a-cylinder color="#eed3cb" radius="0.4" height="3.5" position="1 0.7 0">
+      </a-cylinder>
+
+    </a-scene>
+  </body>
+</html>
